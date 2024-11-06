@@ -1,0 +1,28 @@
+name: Docker Image CI
+
+on: 
+  push: 
+    branches: [ master ]  # Cambia a 'master' si esa es tu rama principal
+  pull_request: 
+    branches: [ master ] 
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest 
+
+    steps: 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to Docker Hub
+        env: 
+          DOCKER_USER: ${{ secrets.DOCKERHUB_USER }} 
+          DOCKER_PASS: ${{ secrets.DOCKERHUB_PASS }} 
+        run: | 
+          echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
+
+      - name: Build the Docker image
+        run: docker build . --tag sdominguer/pokenea:latest  # Reemplaza 'tu_usuario' por tu nombre de usuario en Docker Hub
+
+      - name: Push Docker image to Docker Hub
+        run: docker push sdominguer/pokenea:latest  # Reemplaza 'tu_usuario' por tu nombre de usuario en Docker Hub
