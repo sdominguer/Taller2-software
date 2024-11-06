@@ -6,7 +6,7 @@ pokeneas = [
         "nombre": "Pokenea1",
         "altura": "1.2m",
         "habilidad": "Fuego",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea1.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p1.jpg",
         "frase": "La sabiduría está en el fuego."
     },
     {
@@ -14,7 +14,7 @@ pokeneas = [
         "nombre": "Pokenea2",
         "altura": "0.9m",
         "habilidad": "Agua",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea2.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p10.jpg",
         "frase": "La paciencia fluye como el agua."
     },
     {
@@ -22,7 +22,7 @@ pokeneas = [
         "nombre": "Pokenea3",
         "altura": "1.5m",
         "habilidad": "Tierra",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea3.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p2.webp",
         "frase": "La fuerza está en nuestras raíces."
     },
     {
@@ -30,7 +30,7 @@ pokeneas = [
         "nombre": "Pokenea4",
         "altura": "1.1m",
         "habilidad": "Viento",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea4.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p3.jpg",
         "frase": "Los cambios llegan como una brisa inesperada."
     },
     {
@@ -38,7 +38,7 @@ pokeneas = [
         "nombre": "Pokenea5",
         "altura": "1.0m",
         "habilidad": "Rayo",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea5.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p4.png",
         "frase": "La energía fluye en cada tormenta."
     },
     {
@@ -46,7 +46,7 @@ pokeneas = [
         "nombre": "Pokenea6",
         "altura": "1.8m",
         "habilidad": "Hielo",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea6.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p5.png",
         "frase": "La calma es el poder del hielo."
     },
     {
@@ -54,7 +54,7 @@ pokeneas = [
         "nombre": "Pokenea7",
         "altura": "0.8m",
         "habilidad": "Planta",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea7.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p6.webp",
         "frase": "El crecimiento lleva su propio ritmo."
     },
     {
@@ -62,7 +62,7 @@ pokeneas = [
         "nombre": "Pokenea8",
         "altura": "1.3m",
         "habilidad": "Oscuridad",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea8.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p7.jpg",
         "frase": "El misterio es una fuerza en sí misma."
     },
     {
@@ -70,7 +70,7 @@ pokeneas = [
         "nombre": "Pokenea9",
         "altura": "1.7m",
         "habilidad": "Luz",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea9.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p8.webp",
         "frase": "La luz brilla en la oscuridad."
     },
     {
@@ -78,9 +78,9 @@ pokeneas = [
         "nombre": "Pokenea10",
         "altura": "1.4m",
         "habilidad": "Veneno",
-        "imagen": "https://storage.googleapis.com/tu_bucket_publico/pokenea10.png",
+        "imagen": "https://storage.googleapis.com/pokeneas-imagenes/p9.png",
         "frase": "Cada veneno tiene su antídoto."
     }
 ]
 
-container_id = os.getenv("HOSTNAME", "No_ID")  # ID del contenedor
+container_id = os.getenv("HOSTNAME", "No_ID")  
