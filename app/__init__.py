@@ -1,7 +1,13 @@
+import os
 from flask import Flask
-from .routes import app_routes
 
 def create_app():
-    app = Flask(__name__)
-    app.register_blueprint(app_routes)  # Re
+    
+    template_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../templates"))
+    app = Flask(__name__, template_folder=template_dir)
+
+    
+    from .routes import app_routes
+    app.register_blueprint(app_routes)
     return app
+
